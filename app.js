@@ -12,6 +12,12 @@ function updateRemainingChars(e) {
   // does an equation to find the remaning characters
   const remainingChars = characterMax - enteredTextLength;
   remainingCharsElement.textContent = remainingChars;
+
+  if (remainingChars < 10) {
+    remainingCharsElement.classList.add('warning');
+  } else {
+    remainingCharsElement.classList.remove('warning');
+  }
 }
 
 inputField.addEventListener('input', updateRemainingChars);

@@ -62,6 +62,13 @@ input.warning {
   background-color: rgb(248, 191, 145);
 }
 
+#remaining-chars {
+  color: rgb(60, 209, 23);
+}
+
 #remaining-chars.warning {
   color: rgb(211, 109, 26);
+}
+#remaining-chars.caution {
+  color: rgb(241, 238, 60);
 }
